@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок сторінки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <h2><span>1</span> Заголовок блоку 1</h2>
+            <ul>
+                <li><a href="#">Посилання 1</a></li>
+                <li><a href="#">Посилання 2</a></li>
+                <li><a href="#">Посилання 3</a></li>
+                <li><a href="#">Посилання 4</a></li>
+            </ul>
+        </div>
+        <div class="block">
+            <h2><span>2</span> Заголовок блоку 2</h2>
+            <ul>
+                <li><a href="#">Посилання 1</a></li>
+                <li><a href="#">Посилання 2</a></li>
+                <li><a href="#">Посилання 3</a></li>
+                <li><a href="#">Посилання 4</a></li>
+            </ul>
+        </div>
+        <div class="block">
+            <h2><span>3</span> Заголовок блоку 3</h2>
+            <ul>
+                <li><a href="#">Посилання 1</a></li>
+                <li><a href="#">Посилання 2</a></li>
+                <li><a href="#">Посилання 3</a></li>
+                <li><a href="#">Посилання 4</a></li>
+            </ul>
+        </div>
+        <div class="block">
+            <h2><span>4</span> Заголовок блоку 4</h2>
+            <ul>
+                <li><a href="#">Посилання 1</a></li>
+                <li><a href="#">Посилання 2</a></li>
+                <li><a href="#">Посилання 3</a></li>
+                <li><a href="#">Посилання 4</a></li>
+            </ul>
+        </div>
+    </div>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: calc(25% - 20px);
+    margin: 10px;
+    background-color: #f2f2f2;
+    position: relative;
+    min-height: 100vh;
+}
+
+.block:nth-child(2n) {
+    float: right;
+}
+
+.block h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 20px;
+    background-color: #fff;
+    position: sticky;
+    left: 10px;
+   
+}
+    </style>
+</body>
+</html>
